@@ -1,0 +1,23 @@
+{
+  "name": "purescript-bingsu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/justinwoo/purescript-bingsu.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-node-sqlite3": "^6.0.0",
+    "purescript-typelevel-prelude": "^5.0.0"
+  },
+  "devDependencies": {
+    "purescript-console": "^4.2.0",
+    "purescript-simple-json": "^7.0.0",
+    "purescript-assert": "^4.1.0"
+  }
+}
