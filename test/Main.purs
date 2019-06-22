@@ -47,3 +47,5 @@ main = launchAff_ do
     getByName
          = B.literal "select * from mytable where name ="
       <<>> B.param (B.Param :: _ "name" String)
+      <<>> B.literal "and name ="
+      <<>> B.param (B.Param :: _ "name" String)

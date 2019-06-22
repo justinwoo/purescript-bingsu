@@ -37,8 +37,9 @@ param _ = ParamQuery name
     -- parameter labels must be renamed for use with node-sqlite3
     name = "$" <> reflectSymbol nameS
 
-joinThings :: forall r1 r2 r
-   . Row.Union r1 r2 r
+joinThings :: forall r1 r2 r3 r
+   . Row.Union r1 r2 r3
+  => Row.Nub r3 r
   => ParamQuery r1 -> ParamQuery r2 -> ParamQuery r
 joinThings (ParamQuery s1) (ParamQuery s2) = ParamQuery $ s1 <> " " <> s2
 
